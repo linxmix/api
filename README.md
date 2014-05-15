@@ -1,7 +1,7 @@
 # linx api
 
 [![server tests](https://travis-ci.org/linxmusic/api.png)](https://travis-ci.org/linxmusic/api)
-[![npm version](https://badge.fury.io/js/api.png)](https://npmjs.org/package/api)
+[![npm version](https://badge.fury.io/js/linx-api.png)](https://npmjs.org/package/linx-api)
 [![dependency status](https://david-dm.org/linxmusic/api.png)](https://david-dm.org/linxmusic/api)
 [![devDependency status](https://david-dm.org/linxmusic/api/dev-status.png)](https://david-dm.org/linxmusic/api#info=devDependencies)
 
