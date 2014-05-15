@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "(export NODE_ENV=test; mocha -R spec test/**/*.js)",
-    "develop": "(export NODE_ENV=development; nodemon .)",
+    "develop": "(export NODE_ENV=development; node .)",
     "start": "(export NODE_ENV=production; node .)"
   },
   "repository": {
