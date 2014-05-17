@@ -1,11 +1,10 @@
 FROM ahdinosaur/debian-nodejs
 
-WORKDIR /opt/api.linx.dj
+WORKDIR /srv/www/api.linx.dj
 ADD package.json package.json
-RUN bundle install --deployment --full-index --jobs $(nproc)
+RUN npm install
 
-ADD . /opt/loomio
-WORKDIR /opt/loomio
+ADD . /srv/www/api.linx.dj
 
-EXPOSE 3000
-CMD bundle exec foreman start
+EXPOSE 5000
+CMD npm start

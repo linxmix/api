@@ -10,7 +10,6 @@ var domains = require('../config').domains;
 
 app.configure(function () {
   app.use(require('morgan')());
-  app.use(require('compression')());
   app.use(function (req, res, next) {
     var origin = req.get('origin');
     var domainIndex = _.indexOf(domains, origin);
@@ -21,14 +20,9 @@ app.configure(function () {
     }
     next();
   });
-  app.use(ecstatic({
-    root: __dirname + '/../static',
-    cache: (isProd ? 3600 : 0),
-  }));
   app.use(require('body-parser')());
-  app.use(app.router);
+  app.use(require('./services/edges'));
+  app.use("/sc", require('./services/sc'));
 });
-
-require('./routes/edges')(app);
 
 module.exports = app;
