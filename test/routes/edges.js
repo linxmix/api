@@ -26,7 +26,7 @@ describe("#edges", function () {
   
   before(function (done) {
     db = require('../../src/db');
-    app = require('../../src/server');
+    app = require('../../src');
     delAll(db, done);
   });
 

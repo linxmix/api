@@ -29,14 +29,12 @@
     "debug": "^0.7.4",
     "ecstatic": "^0.5.3",
     "express": "^3.4.8",
-    "http-proxy": "^1.1.4",
     "level": "^0.18.0",
     "level-sublevel": "^5.2.0",
     "level-writestream": "^0.1.1",
     "levelgraph": "^0.8.2",
     "lodash": "^2.4.1",
     "morgan": "^1.0.0",
-    "systemd": "^0.2.6",
     "tv4": "^1.0.16"
   }
 }

@@ -1,5 +1,0 @@
-[Socket]
-ListenStream=/run/api-linx.sk
-
-[Install]
-WantedBy=sockets.target

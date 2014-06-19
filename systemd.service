@@ -1,9 +1,0 @@
-[Service]
-WorkingDirectory=/srv/www/api.linx.dj/
-ExecStart=/usr/local/bin/node /srv/www/api.linx.dj/index.js
-StandardOutput=syslog
-StandardError=syslog
-SyslogIdentifier=api.linx.dj
-User=nobody
-Group=nobody
-Environment=NODE_ENV=production
