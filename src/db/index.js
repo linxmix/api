@@ -9,7 +9,7 @@ switch (process.env.NODE_ENV) {
     dbName = __dirname + "/../../testdb";
     break;
   case "production":
-    dbName = "/data/db";
+    dbName = __dirname + "/../../db";
     break;
   default:
     dbName = __dirname + "/../../db";
